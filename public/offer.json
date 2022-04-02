@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "offerName": "Premium Support",
+        "offerDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting."
+    },
+    {
+        "id":2,
+        "offerName": "Incredible Location",
+        "offerDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting."
+    },
+    {
+        "id":3,
+        "offerName": "Best Equipment",
+        "offerDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting."
+    },
+    {
+        "id":4,
+        "offerName": "Satisfied Clients",
+        "offerDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting."
+    }
+]
