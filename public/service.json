@@ -1,0 +1,38 @@
+[
+    {   
+        "id":1,
+        "serviceImage":"/images/dentist-01.jpg",
+        "serviceName":"Teeth Whitening",
+        "serviceDescription":"Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy."
+    },
+    {   
+        "id":2,
+        "serviceImage":"/images/dentist-02.jpg",
+        "serviceName":"Invisible Braces",
+        "serviceDescription":"Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy."
+    },
+    {   
+        "id":3,
+        "serviceImage":"/images/dentist-03.jpg",
+        "serviceName":"Dental Implants",
+        "serviceDescription":"Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy."
+    },
+    {   
+        "id":4,
+        "serviceImage":"/images/dentist-04.jpg",
+        "serviceName":"Emergency Care",
+        "serviceDescription":"Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy."
+    },
+    {   
+        "id":5,
+        "serviceImage":"/images/dentist-05.jpg",
+        "serviceName":"Porcelain Veneers",
+        "serviceDescription":"Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy."
+    },
+    {   
+        "id":6,
+        "serviceImage":"/images/dentist-06.jpg",
+        "serviceName":"Health Consultation",
+        "serviceDescription":"Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy."
+    }
+]
