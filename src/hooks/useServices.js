@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { MyContext } from "../App";
 
 const useServices = () => {
-  const [services, setServices] = useState([]);
+  const [services, setServices] = useContext(MyContext);
   useEffect(() => {
     fetch("service.json")
       .then((res) => res.json())

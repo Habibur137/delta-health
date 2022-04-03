@@ -1,25 +1,56 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const { pathname } = useLocation();
   return (
-    <nav className="px-20 md:flex justify-between text-2xl text-gray-500 bg-slate-100 h-10">
-      <div>
-        <h1>Delta Health</h1>
-      </div>
-      <div>
-        <Link className="mr-2" to="/">
-          Home
-        </Link>
-        <Link className="mr-2" to="/services">
-          Services
-        </Link>
-        <Link className="mr-2" to="/pricing">
-          Pricing
-        </Link>
-        <Link to="/contact">Contact</Link>
-      </div>
-    </nav>
+    <div
+      style={
+        pathname.includes("detail") ? { display: "none" } : { display: "flex" }
+      }
+      className="flex justify-center gap-4 mt-4"
+    >
+      <NavLink
+        to="/"
+        className={({ isActive }) =>
+          isActive
+            ? "bg-[#44B1BA] text-white font-bold text-2xl px-2"
+            : "text-2xl"
+        }
+      >
+        Home
+      </NavLink>
+      <NavLink
+        to="/services"
+        className={({ isActive }) =>
+          isActive
+            ? "bg-[#44B1BA] text-white font-bold text-2xl px-2"
+            : "text-2xl"
+        }
+      >
+        Services
+      </NavLink>
+      <NavLink
+        to="/pricing"
+        className={({ isActive }) =>
+          isActive
+            ? "bg-[#44B1BA] text-white font-bold text-2xl px-2"
+            : "text-2xl"
+        }
+      >
+        Pricing
+      </NavLink>
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive
+            ? "bg-[#44B1BA] text-white font-bold text-2xl px-2"
+            : "text-2xl"
+        }
+      >
+        About
+      </NavLink>
+    </div>
   );
 };
 

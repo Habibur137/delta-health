@@ -1,41 +1,27 @@
-import React, { useEffect, useState } from "react";
-import Offer from "../Offer/Offer";
-import offerImage from "../../images/dantist.jpg";
-import useOffers from "../../hooks/useOffers";
+import React, { useContext } from "react";
+import useServices from "../../hooks/useServices";
+import Service from "../Service/Service";
+import { MyContext } from "../../App";
 
 const Services = () => {
-  const [offers, setOffers] = useOffers();
+  //   const [service] = useContext(MyContext);
+  //   console.log(service);
+  const [services] = useServices();
+  //   console.log(services);
   return (
-    <div className="services-container px-20 mt-8">
-      <div className="offer-part">
-        <div>
-          <div className="offer-descriotion md:w-3/5 mb-2 mt-2">
-            <h1 className="text-3xl text-gray-500">What do we offer?</h1>
-            <p className="text-gray-500">
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humour, or randomised words which don’t look even
-              slightly believable.
-            </p>
-          </div>
-          <div className="md:flex gap-4">
-            <div className="md:w-3/5 md:grid grid-cols-2 gap-4 h-[350px] mt-2">
-              {offers.map((offer) => (
-                <Offer offer={offer} key={offer.id}></Offer>
-              ))}
-            </div>
-            <div className="md:w-2/5">
-              <img
-                className="md:h-[450px] md:relative md:bottom-24"
-                src={offerImage}
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
+    <div className="bg-[#f6f6f6] mt-12">
+      <h1 className="text-2xl text-center text-[#44B1BA] pt-4 m mb-2">
+        Let us brighten your smile!
+      </h1>
+      <h1 className="text-4xl text-center text-[#484848]">
+        Explore Dental Care Services
+      </h1>
+      <hr className="border border-[#44B1BA] w-24 mt-4 mx-auto " />
+      <div className="md:grid grid-cols-3 md:p-20 gap-8">
+        {services.map((service) => (
+          <Service key={service.id} service={service} />
+        ))}
       </div>
-      {/* offer part end  */}
-      {/* services part start  */}
     </div>
   );
 };
